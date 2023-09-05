@@ -10,6 +10,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Carbon Design Gatsby Theme',
+        postsPath: "/getting-started",
         icon: 'src/images/favicon.svg',
         short_name: 'Gatsby Theme Carbon',
         start_url: '/',
@@ -17,6 +18,7 @@ module.exports = {
         theme_color: '#161616',
         display: 'browser',
       },
+      
     },
     {
       resolve: 'gatsby-theme-carbon',
@@ -27,6 +29,12 @@ module.exports = {
             'https://github.com/carbon-design-system/gatsby-theme-carbon',
           subDirectory: '/packages/example',
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
       },
     },
   ],
